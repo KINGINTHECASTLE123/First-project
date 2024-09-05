@@ -14,28 +14,31 @@ body {
     font-family: Open Sans, sans-serif;
     color: darkslategray;
     background-color: bisque;
+    overflow-x: hidden;
 }
 
 footer {
     background-color: lightgrey;
     position: absolute;
     left: 0;
-    right: 0px;
+    right: 0;
     padding: 24px 0 36px;
     text-align: center;
+    margin-top: 40px;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
+a {
+    color: #16a085;
+    text-decoration: none;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+a:link, a:visited, a:hover, a:active {
+    color: #16a085;
+    text-decoration: none;
+}
+
+.line {
+    margin-top: 40px;
 }
 
 .content {
@@ -125,6 +128,37 @@ body {
     }
 }
 
-.line {
-    margin-top: 40px;
+@media (max-width: 600px) {
+    .content {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content__container {
+        padding: 0 20px;
+    }
+
+    .content__container__list {
+        padding-left: 80px;
+        font-size: 20px;
+    }
+
+    .content__container__text {
+        margin: 0 0 0 10px;
+    }
+
+    .line {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        font-size: 20px;
+    }
+
+    .content__container {
+        padding: 0 5px;
+    }
 }
